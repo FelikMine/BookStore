@@ -1,7 +1,7 @@
 import Markup from "./Markup";
 import Wizard from "../assets/wizard.png"
+import Legacy from "../assets/legacy.png"
 import OneBook from "../components/OneBook";
-import TwoBook from "../components/TwoBook"
 
 export default function Stories() {
 
@@ -14,27 +14,23 @@ export default function Stories() {
 
                     <div className=" grid grid-cols-4 mt-10 gap-x-14">
 
-                        <div className="group perspective-[1000px] transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-[180deg]">
-                            <div className=" absolute backface-hidden front col-span-1 p-5 box-border border-amber-500 border-4 h-[340px] rounded-3xl flex items-center justify-center flex-col gap-2.5 overflow-hidden">
-                                <OneBook
-                                    title={"Грязная кровь"}
-                                    description={"История запретной любви"}
-                                    image={Wizard}
-                                />
-                                <button className="text-xl bg-amber-500 text-slate-900 rounded-4xl w-full py-2 hovered actived duration-500"> Начать </button>
-                            </div>
-                        </div>
+                        <OneBook
+                            title={"Грязная кровь"}
+                            description={"История запретной любви"}
+                            image={Wizard}
+                            title2={"Грязная кровь"}
+                            description2={"Когда любовь становится оружием против системы, а капля \"низкой\" крови в жилах угрожает разрушить трон, построенный на предрассудках."}
+                            link={"/dirty-blood"}
+                        />
 
-                        <div className="group perspective-[1000px] transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-[180deg]">
-                            <div className=" absolute backface-hidden front col-span-1 p-5 box-border border-amber-500 border-4 h-[340px] rounded-3xl flex items-center justify-center flex-col gap-2.5 overflow-hidden">
-                                <TwoBook
-                                    title={"Грязная кровь"}
-                                    description={"Когда любовь становится оружием против системы, а капля \"низкой\" крови в жилах угрожает разрушить трон, построенный на предрассудках."}
-                                    image={Wizard}
-                                />
-                                <button className="text-xl bg-amber-500 text-slate-900 rounded-4xl w-full py-2 hovered actived duration-500 relative z-10"> Начать </button>
-                            </div>
-                        </div>
+                        <OneBook
+                            title={"Наследие"}
+                            description={"Продолжение легендарной истории"}
+                            image={Legacy}
+                            title2={"Наследие"}
+                            description2={"Потомки тех, кто когда-то боролся за право любить, теперь сами стоят перед выбором: продолжить борьбу или смириться с правилами, написанными чужими руками."}
+                            link={"/legacy"}
+                        />
 
                     </div>
                 </div>
