@@ -6,7 +6,7 @@ export default function OneBook ({title, description, image}) {
         <>
             <img className="h-32 w-32" src={image} alt="волшебник" />
             <h3> {title} </h3>
-            <p className="text-center !text-lg"> {description} </p>
+            <p className="text-center leading-5 !text-lg"> {description} </p>
         </>
     )
 }
