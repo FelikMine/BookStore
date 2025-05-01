@@ -81,14 +81,20 @@ p  { font-size: var(--p-size); font-weight: var(--p-weight); }
 a  { font-size: var(--p-size); font-weight: var(--p-weight); }
 button { font-size: var(--p-size); font-weight: var(--p-weight); }
 
+h1, h2, h3, p {
+  line-height: 150%;
+}
 
 @media (max-width: 768px) {
   :root {
     /* Мобильные устройства */
-    --h1-size: 2rem;   /* 32px */
-    --h2-size: 1.5rem; /* 24px */
-    --h3-size: 1.25rem; /* 20px */
-    --p-size: 0.875rem; /* 14px */
+    --h1-size: 1.5rem;   /* 24px */
+    --h2-size: 1.25rem; /* 18px */
+    --h3-size: 1.125rem; /* 18px */
+    --p-size: 1.125 rem; /* 18px */
+  }
+  h1, h2, h3, p {
+    line-height: 130%;
   }
 }
 
